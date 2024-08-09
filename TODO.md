@@ -1,0 +1,12 @@
+- [x] vim editing mode
+- [ ] plugins
+	- [ ] minimal theme
+	- [ ] style settings
+	- [ ] calendar
+	- [ ] templater
+	- [ ] quickadd
+	- [ ] periodic notes
+	- [ ] dataview
+- [ ] manual configuration for demo
+	- [ ] dataview daily scripts
+	- [ ] project template
