@@ -6,37 +6,50 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCalendarRange",
       "LiLayers2",
       "LiGanttChartSquare",
       "LiLayoutPanelLeft",
-      "LiBookMarked",
-      "LiBookCopy"
+      "LiBookMarked"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [
       {
-        "rule": ".*",
+        "rule": ".",
         "icon": "LiFile",
-        "for": "everything",
+        "for": "files",
         "order": 0
       },
       {
-        "rule": ".*/",
-        "icon": "LiFolder",
-        "for": "everything",
+        "rule": ".",
+        "icon": "LiFolderClosed",
+        "for": "folders",
         "order": 2
+      },
+      {
+        "rule": ".md$",
+        "icon": "LiFileText",
+        "for": "files",
+        "order": 2
+      },
+      {
+        "rule": "0 - Daily/\\d{4}",
+        "icon": "LiCalendarDays",
+        "for": "folders",
+        "order": 3,
+        "useFilePath": true
       },
       {
         "rule": "Issue.*",
         "icon": "LiBug",
-        "for": "everything",
-        "order": 3
+        "for": "files",
+        "order": 5
       },
       {
         "rule": "Project.*(",
         "icon": "LiClipboardList",
-        "for": "everything",
-        "order": 3
+        "for": "files",
+        "order": 5
       }
     ],
     "extraMargin": {
@@ -58,7 +71,7 @@
     "lucideIconPackType": "native",
     "debugMode": false
   },
-  "0 - Daily": "LiCalendarDays",
+  "0 - Daily": "LiCalendarRange",
   "Attachments": "LiPaperclip",
   "4 - Archive": "LiArchive",
   "3 - Resources": "LiBookMarked",
