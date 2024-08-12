@@ -16,6 +16,15 @@
       "key": "\\"
     }
   ],
+  "daily-notes": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
   "global-search:open": [],
   "omnisearch:show-modal": [
     {
