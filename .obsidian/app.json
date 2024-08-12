@@ -1,5 +1,6 @@
 {
   "vimMode": true,
   "promptDelete": false,
-  "attachmentFolderPath": "Attachments"
+  "attachmentFolderPath": "Attachments",
+  "autoPairBrackets": false
 }
