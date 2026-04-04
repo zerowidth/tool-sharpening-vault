@@ -69,12 +69,12 @@
     "iconsInLinksEnabled": true,
     "iconIdentifier": ":",
     "lucideIconPackType": "native",
-    "debugMode": false
+    "debugMode": false,
+    "useInternalPlugins": false
   },
   "0 - Daily": "LiCalendarRange",
   "Attachments": "LiPaperclip",
   "4 - Archive": "LiArchive",
-  "3 - Resources": "LiBookMarked",
   "2 - Areas": "LiLayoutPanelLeft",
   "1 - Projects": "LiGanttChartSquare",
   "Templates": "LiLayers2"
