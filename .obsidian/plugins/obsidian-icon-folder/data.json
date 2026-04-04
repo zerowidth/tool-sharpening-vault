@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiUsers",
+      "LiNotebookPen",
       "LiCalendarRange",
       "LiLayers2",
-      "LiGanttChartSquare",
-      "LiLayoutPanelLeft",
-      "LiBookMarked"
+      "LiGanttChartSquare"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [
@@ -77,5 +77,7 @@
   "4 - Archive": "LiArchive",
   "2 - Areas": "LiLayoutPanelLeft",
   "1 - Projects": "LiGanttChartSquare",
-  "Templates": "LiLayers2"
+  "Templates": "LiLayers2",
+  "3 - Resources/Meeting Notes": "LiNotebookPen",
+  "3 - Resources/People": "LiUsers"
 }

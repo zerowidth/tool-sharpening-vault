@@ -2,13 +2,19 @@
   "globalTriggerSymbol": "@",
   "limitLinkDirectories": [
     {
-      "folder": "3 - Resources",
-      "symbol": ""
+      "folder": "3 - Resources/People",
+      "symbol": "@"
     }
   ],
-  "includeSymbol": true,
+  "includeSymbol": false,
   "showAddNewNote": true,
-  "addNewNoteFolders": [],
+  "addNewNoteFolders": [
+    {
+      "folder": "3 - Resources/People",
+      "symbol": "@",
+      "template": "Templates/Person"
+    }
+  ],
   "includeSymbolInNewFileName": false,
   "addNewNoteTemplateFile": "",
   "addNewNoteDirectory": "",

@@ -1,0 +1,46 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "Templates",
+  "templates_pairs": [
+    [
+      "markdownLink",
+      "PATH=$PATH:/opt/homebrew/bin /opt/homebrew/bin/gh md link -n \"$input\""
+    ],
+    [
+      "markdownTitle",
+      "PATH=$PATH:/opt/homebrew/bin /opt/homebrew/bin/gh md title -n --sanitize \"$input\""
+    ],
+    [
+      "githubName",
+      "PATH=$PATH:/opt/homebrew/bin gh api \"/users/$input\" -q '.name // \"unknown\"'"
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": true,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": false,
+  "folder_templates": [
+    {
+      "folder": "",
+      "template": ""
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    "Templates/Daily Log.md"
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "intellisense_render": 1
+}
