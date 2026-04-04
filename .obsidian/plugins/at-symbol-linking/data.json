@@ -1,0 +1,21 @@
+{
+  "globalTriggerSymbol": "@",
+  "limitLinkDirectories": [
+    {
+      "folder": "3 - Resources",
+      "symbol": ""
+    }
+  ],
+  "includeSymbol": true,
+  "showAddNewNote": true,
+  "addNewNoteFolders": [],
+  "includeSymbolInNewFileName": false,
+  "addNewNoteTemplateFile": "",
+  "addNewNoteDirectory": "",
+  "useCompatibilityMode": false,
+  "leavePopupOpenForXSpaces": 0,
+  "allowedCodeBlockTypes": [],
+  "invalidCharacterRegex": "[\\[\\]^|#]",
+  "invalidCharacterRegexFlags": "i",
+  "removeAccents": true
+}
