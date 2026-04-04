@@ -1,0 +1,2 @@
+- [GitHub - zerowidth/gh-md: gh-cli extension to create markdown links and issue references · GitHub](https://github.com/zerowidth/gh-md)
+- [GitHub - rneatherway/gh-slack: Utility for archiving a slack conversation as markdown · GitHub](https://github.com/rneatherway/gh-slack)

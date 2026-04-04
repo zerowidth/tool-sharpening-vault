@@ -1,12 +1,17 @@
 - [x] vim editing mode
-- [ ] plugins
-	- [ ] minimal theme
-	- [ ] style settings
-	- [ ] calendar
-	- [ ] templater
-	- [ ] quickadd
-	- [ ] periodic notes
-	- [ ] dataview
-- [ ] manual configuration for demo
-	- [ ] dataview daily scripts
-	- [ ] project template
+- [x] plugins
+- [x] update plugins and commit
+- [x] update plugins and commit
+- [x] rework to more of a guide format
+- [x] cmd-shift-L for daily log entry
+- [x] tab and history nav shortcut updates
+- [x] other plugins: `^` for natural dates, `@` for people
+- [x] manual configuration for demo
+	- [x] daily note
+	- [x] meeting note quickadd
+	- [x] templater wiring for `gh-md`
+	- [x] markdown link quickadd
+	- [x] dataview scripts
+	- [x] project template
+	- [x] github issue template
+- [ ] commit everything and push to public repo

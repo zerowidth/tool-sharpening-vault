@@ -1,6 +1,7 @@
 // find headers that link to this daily note
-const headerPattern =
-  new RegExp("^(#{1,6})\\s(.*" + dv.current().file.name + ".*)");
+const headerPattern = new RegExp(
+  "^(#{1,6})\\s(.*" + dv.current().file.name + ".*)",
+);
 // find any header
 const genericHeader = new RegExp("^(#{1,6})\\s.*");
 // the YYYY-MM-DD portion of this daily note's filename
@@ -12,7 +13,7 @@ function reindent(lines, depth) {
     let match = line.match(genericHeader);
     if (match) {
       headerDepth = match[1].length;
-      return "#".repeat(depth - headerDepth + 1)+line;
+      return "#".repeat(depth - headerDepth + 1) + line;
     } else {
       return line;
     }
@@ -22,12 +23,13 @@ function reindent(lines, depth) {
 // get all the unique pages that link to this daily note
 // or start with today's date
 // and sort by last modified time
-let today = dv.pages()
+let today = dv
+  .pages()
   .where((p) => p.file.name.startsWith(date))
   .filter((p) => p.file.path != dv.current().file.path);
-let pages = dv.current()
-  .file.inlinks 
-  .map(i => dv.page(i.path))
+let pages = dv
+  .current()
+  .file.inlinks.map((i) => dv.page(i.path))
   .concat(today)
   .distinct((p) => p.file.path)
   .sort((p) => p.file.mtime, "asc");
@@ -59,7 +61,8 @@ for (let page of pages) {
   }
 
   // otherwise, look for mentions and headers
-  lines.where(l => l.includes(dv.current().file.name))
+  lines
+    .where((l) => l.includes(dv.current().file.name))
     .forEach((line) => {
       if (line.match(headerPattern)) {
         headers.push(line);
@@ -80,11 +83,11 @@ for (let page of pages) {
     if (headers.length > 1) {
       dv.header(3, dv.fileLink(page.file.path));
       dv.el("p", headers.length + " headers matched!");
-    } 
+    }
   }
   if (headers.length > 0) {
     // only processing the first one that matches
-    header = headers[0];
+    let header = headers[0];
     let currentHeader = lines.findIndex((line) => line.match(headerPattern));
     // figure out what header level we're at (h2, h3, etc)
     const depth = header.match(headerPattern)[1].length;
@@ -94,8 +97,12 @@ for (let page of pages) {
     dv.header(3, dv.sectionLink(page.file.path, text));
     if (currentHeader < 0) {
       dv.el("p", "_couldn't find matching header, something went wrong_");
-      console.log("couldn't find matching header linking to",
-        dv.current().file.name, "in", page.file.path);
+      console.log(
+        "couldn't find matching header linking to",
+        dv.current().file.name,
+        "in",
+        page.file.path,
+      );
       continue;
     }
     // figure out when the next sibling header begins
@@ -107,8 +114,10 @@ for (let page of pages) {
       nextHeader = lines.length;
     }
     // include every line between the current and next header
-    dv.el("div",
-      reindent(lines.slice(currentHeader + 1, nextHeader), 3).join("\n"));
+    dv.el(
+      "div",
+      reindent(lines.slice(currentHeader + 1, nextHeader), 3).join("\n"),
+    );
   }
 
   if (mentions.length > 0 || headers.length > 0) {
