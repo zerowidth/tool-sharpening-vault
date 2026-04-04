@@ -2,5 +2,9 @@
   "vimMode": true,
   "promptDelete": false,
   "attachmentFolderPath": "Attachments",
-  "autoPairBrackets": false
+  "autoPairBrackets": false,
+  "foldHeading": false,
+  "foldIndent": false,
+  "showInlineTitle": true,
+  "alwaysUpdateLinks": true
 }
