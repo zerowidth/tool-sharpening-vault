@@ -8,9 +8,11 @@ Combination of plugins: "Templater" for templating, "QuickAdd" for ... quickly a
 	- [ ] "quick add project"
 - [ ] Demo "create a project" quickadd
 - [ ] Demo using a project note, with logging and tasks, and next with subsection
+	- [ ] `^` for dates
 	- [ ] demo quick nav to headings
 - [ ] [[Meeting Note]] template
 - [ ] Demo "meeting note" quickadd
+	- [ ] `@` for at-mentions / people
 - [ ] weight of TODOs is alleviated
 - [ ] problem: daily context is lost
 
